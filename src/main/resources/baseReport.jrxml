@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="baseReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="3bb56169-1a04-4f46-ae31-5e1384d0296c">
+    <property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+    <property name="com.jaspersoft.studio.data.defaultdataadapter" value="Sample DB"/>
+
+    <field name="id" class="java.lang.Long">
+    </field>
+
+    <field name="nome" class="java.lang.String">
+    </field>
+    <field name="cpf" class="java.lang.String">
+    </field>
+    <field name="cidade" class="java.lang.String">
+    </field>
+    <field name="telefone" class="java.lang.String">
+    </field>
+    <field name="profissao" class="java.lang.String">
+    </field>
+
+    <group name="id">
+        <groupExpression><![CDATA[$F{id}]]></groupExpression>
+    </group>
+    <group name="nome">
+        <groupExpression><![CDATA[$F{nome}]]></groupExpression>
+    </group>
+    <group name="cpf">
+        <groupExpression><![CDATA[$F{cpf}]]></groupExpression>
+    </group>
+    <group name="cidade">
+        <groupExpression><![CDATA[$F{cidade}]]></groupExpression>
+    </group>
+    <group name="telefone">
+        <groupExpression><![CDATA[$F{telefone}]]></groupExpression>
+    </group>
+    <group name="profissao">
+        <groupExpression><![CDATA[$F{profissao}]]></groupExpression>
+    </group>
+    <background>
+        <band splitType="Stretch"/>
+    </background>
+    <title>
+        <band height="89" splitType="Stretch">
+            <staticText>
+                <reportElement x="0" y="10" width="279" height="30" uuid="ccf669b8-8b99-42e3-b2f3-ba7e661498b0"/>
+                <textElement>
+                    <font fontName="SansSerif" size="22" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Relatório Clientes]]></text>
+            </staticText>
+            <textField pattern="MMMMM dd, yyyy">
+                <reportElement x="0" y="60" width="100" height="20" uuid="4fc851f7-33d6-4c12-90e9-7e72519b2725"/>
+                <textElement>
+                    <font isBold="false"/>
+                </textElement>
+                <textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="350" y="24" width="200" height="50" uuid="88ba6cae-48b0-45bc-93b3-7f4c575371b7"/>
+                <textElement>
+                    <font size="8"/>
+                </textElement>
+                <textFieldExpression><![CDATA["As informações apresentadas neste relatório são confiáveis e foram geradas a partir de uma análise minuciosa dos dados disponíveis, visando fornecer insights precisos para tomada de decisões estratégicas"]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="0" y="40" width="150" height="18" uuid="cf80a8ed-9eb1-418d-ae9a-7aedc8bd6a97"/>
+                <text><![CDATA[TEXX Soluções Tecnológicas]]></text>
+            </staticText>
+        </band>
+    </title>
+    <columnHeader>
+        <band height="30" splitType="Stretch">
+            <textField>
+                <reportElement mode="Opaque" x="0" y="0" width="50" height="30" forecolor="#FFFFFF" backcolor="#7D7878" uuid="18a59964-021b-41b8-b9fa-e62e3fe0898d"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font size="10" isBold="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA["ID"]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement mode="Opaque" x="50" y="0" width="100" height="30" forecolor="#FFFFFF" backcolor="#7D7878" uuid="1bcf78e7-277c-4b57-aab5-2c1e24d956e3"/>
+                <textElement verticalAlignment="Middle">
+                    <font isBold="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA[" NOME"]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement mode="Opaque" x="150" y="0" width="100" height="30" forecolor="#FFFFFF" backcolor="#7D7878" uuid="776f91b3-33ad-45d8-a434-55dfe9ef265b"/>
+                <textElement verticalAlignment="Middle">
+                    <font isBold="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA[" CPF"]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement mode="Opaque" x="250" y="0" width="100" height="30" forecolor="#FFFFFF" backcolor="#7D7878" uuid="19df6c43-8e17-431f-9949-b155cfe922a5"/>
+                <textElement verticalAlignment="Middle">
+                    <font isBold="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA[" CIDADE"]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement mode="Opaque" x="350" y="0" width="100" height="30" forecolor="#FFFFFF" backcolor="#7D7878" uuid="5dea2d0d-fb8d-402c-85c6-f2630f18a7d4"/>
+                <textElement verticalAlignment="Middle">
+                    <font isBold="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA[" TELEFONE"]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement mode="Opaque" x="450" y="0" width="100" height="30" forecolor="#FFFFFF" backcolor="#7D7878" uuid="8aaa33ac-1b06-4df4-94e7-7af1dcd3a672"/>
+                <textElement verticalAlignment="Middle">
+                    <font isBold="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA[" PROFISSÃO"]]></textFieldExpression>
+            </textField>
+        </band>
+    </columnHeader>
+    <detail>
+        <band height="31" splitType="Stretch">
+            <rectangle>
+                <reportElement isPrintRepeatedValues="false" mode="Opaque" x="0" y="0" width="550" height="30" printWhenGroupChanges="id" forecolor="rgba(10, 91, 22, 0.0)" backcolor="#92BCD4" uuid="07c3f24a-69f1-44cc-b003-25d6d8e01f00">
+                    <printWhenExpression><![CDATA[($V{REPORT_COUNT} % 2) == 0]]></printWhenExpression>
+                </reportElement>
+            </rectangle>
+            <textField>
+                <reportElement x="0" y="0" width="50" height="30" uuid="a59ba2a7-7630-44eb-a88f-8d706f3a9e0c">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b48eba86-3bea-4bab-9e34-a556e773a565"/>
+                </reportElement>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font size="10"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="50" y="0" width="100" height="30" uuid="fae4dfdf-90ff-473a-a6fc-35406b0687a9">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2c196275-d93d-4266-bdb6-a876b151c37a"/>
+                </reportElement>
+                <textElement textAlignment="Left" verticalAlignment="Middle"/>
+                <textFieldExpression><![CDATA[$F{nome}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="150" y="0" width="100" height="30" uuid="5974ab11-c34a-44ec-99bc-65a67b3c2082">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="dd80cc68-d537-4893-a588-0ad2f758e336"/>
+                </reportElement>
+                <textElement textAlignment="Left" verticalAlignment="Middle"/>
+                <textFieldExpression><![CDATA[$F{cpf}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="250" y="0" width="100" height="30" uuid="6f33e2df-d804-454d-9a0a-152f0c021d5d">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a53e3489-9038-4707-9f0f-dd85036aa7c7"/>
+                </reportElement>
+                <textElement textAlignment="Left" verticalAlignment="Middle"/>
+                <textFieldExpression><![CDATA[$F{cidade}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="350" y="0" width="100" height="30" uuid="e0e3ec31-48be-4c30-9296-a3c306ea501c">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8ce0705a-c12d-48d0-9563-0d8f5d62d33a"/>
+                </reportElement>
+                <textElement textAlignment="Left" verticalAlignment="Middle"/>
+                <textFieldExpression><![CDATA[$F{telefone}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="450" y="0" width="100" height="30" uuid="249bc01e-4cab-497b-bdb7-a8b9bea9507c">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="72eb90e9-f6c5-4428-9c9c-56d1d3813298"/>
+                </reportElement>
+                <textElement textAlignment="Left" verticalAlignment="Middle"/>
+                <textFieldExpression><![CDATA[$F{profissao}]]></textFieldExpression>
+            </textField>
+        </band>
+    </detail>
+    <pageFooter>
+        <band height="34" splitType="Stretch">
+            <textField pattern="MMMMM dd, yyyy">
+                <reportElement x="0" y="10" width="100" height="14" uuid="53c0a1bf-44e4-4462-a8bd-ce681a856992"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font isBold="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+            </textField>
+            <textField pattern="HH:mm">
+                <reportElement x="100" y="10" width="100" height="14" uuid="2034a721-24a8-4509-aa8f-35b61ebcc4cd"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font isBold="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="300" y="-1" width="130" height="30" uuid="031009b2-dde7-4535-a1ab-766363d45773"/>
+                <textElement textAlignment="Right" verticalAlignment="Middle">
+                    <font isBold="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA["Página " + $V{PAGE_NUMBER}]]></textFieldExpression>
+            </textField>
+            <textField evaluationTime="Report">
+                <reportElement x="430" y="-1" width="100" height="30" uuid="fcd72b41-a9bc-49f4-8fbb-b87942b9647c"/>
+                <textElement textAlignment="Left" verticalAlignment="Middle">
+                    <font isBold="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA[" de " + $V{PAGE_NUMBER}]]></textFieldExpression>
+            </textField>
+        </band>
+    </pageFooter>
+</jasperReport>
